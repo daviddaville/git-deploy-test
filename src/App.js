@@ -1,6 +1,8 @@
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
-import Page from './components/Page';
 import './App.css';
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
 
 
 
