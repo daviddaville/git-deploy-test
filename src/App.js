@@ -1,3 +1,4 @@
+import { Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,27 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Route
+        exact
+        path="/"
+        render={() => (
+          <div>
+            <h1>Welcome</h1>
+          </div>
+        )}
+      />
+      <Route
+        path="/dashboard"
+        render={() => (
+          <div>
+            <h1>Dashboard</h1>
+            <Link to="/" id="click-me">
+              Home
+          </Link>
+          </div>
+        )}
+      />
     </div>
   );
 }
